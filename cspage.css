@@ -1,0 +1,149 @@
+html {
+	font-family: Arial;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+	.header > * {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 90px;
+		text-align: center;
+	}
+		.header-bar {
+			background-color: #eef;
+		}
+		.header-menu {
+			font-size: 15px;
+		}
+		.header-bar > * {
+			flex: 1;
+		}
+		.header-menu > * {
+			flex: 1;	
+		}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	/*z-index: auto;*/
+	width: 1250px;
+	padding: 0 50px;
+	max-height: 300px;
+	background-color: #ddd;
+	align-items: center;
+
+}
+	.container-header {
+		/*z-index: 1;*/
+		height: 300px;
+		/*display: flex;*/
+		
+	}
+		.container-header > h3 {
+			margin-left: 50px;
+			text-align: left;
+			font-size: 40px;
+		}
+	.container-inner {
+		display: flex;
+		background-color: white;
+		padding-top: 50px;
+	}
+		.sidebar { 
+			background-color: #ddd;
+			width: 1000px;
+			height: 400px;
+			margin: 20px;
+			padding: 20px;
+			/*background-color: red*/
+		}
+
+
+		.container-inner > ul {
+			flex: 2;
+			background-color: #eee;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+			.container-inner > ul > li {
+				margin: 0;
+				padding: 10px 0;
+				padding-right: 100px;
+				background-color: white;
+				display: flex;
+				align-items: center;
+			}
+			.container-inner > ul > li > img {
+				/*border: 1px solid black;*/
+				height: 100px;
+				width: 100px;
+				border-radius: 50%;
+				margin-left: 20px;
+			}
+			.container-inner > ul > li > .info {
+				padding-left: 20px;
+			}
+				.container-inner > ul > li > .info > p {
+					padding-left: 20px;
+				}
+		.container-inner > .search {
+			flex: 1;
+			background-color: transparent;
+			height: 200px;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-right: -20px;
+		}
+			.container-inner > .search > .search-container {
+				background-color: rgba(50,50,70,0.8);
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+.plchdr {
+	/*z-index: -1;*/
+	/*display: flex;*/
+	/*flex-direction: column;*/
+	background-color: red;
+	/*border: 100px;*/
+	padding: 100px;
+	width: 1050px;
+	/*margin: 20px;*/
+	/*height: 400px;*/
+}
+
+.content{
+	display: block;
+	padding-right: 100px;
+}
+
+.all{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	z-index: auto;
+}
